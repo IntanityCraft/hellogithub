@@ -14,6 +14,8 @@ public class HelloWorld {
 
 		System.out.println("Baezy Fat++++");
 		System.out.println("Baezy Fat LOL");
+		
+		System.out.println("tum gu confuse e dok");
 
 
 	}
