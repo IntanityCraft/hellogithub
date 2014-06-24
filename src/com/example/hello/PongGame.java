@@ -14,12 +14,12 @@ public class PongGame extends JFrame {
 		setSize(600, 400);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
-		ball = new Ball(this, getWidth()/2, getHeight()/2, 6, 6, 10);
+		ball = new Ball(this, getWidth() / 2, getHeight() / 2, 6, 6, 10);
 		gameLoop = new Thread(new Runnable() {
-			
+
 			@Override
 			public void run() {
-				while(true) {
+				while (true) {
 					update();
 					repaint();
 					try {
@@ -33,21 +33,20 @@ public class PongGame extends JFrame {
 		});
 		gameLoop.start();
 	}
-	
+
 	public void update() {
 		ball.update();
 	}
-	
+
 	@Override
 	public void paint(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
 		g2.clearRect(0, 0, getWidth(), getHeight());
 		ball.draw(g2);
 	}
-	
-	
+
 	@Override
 	public void paintComponents(Graphics g) {
-		
+
 	}
 }
