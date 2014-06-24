@@ -6,6 +6,7 @@ public class HelloWorld {
 
 
 		System.out.println("This came from eclipse");
+		System.out.println("Test conflict!");
 		new PongGame();
 	}
 
