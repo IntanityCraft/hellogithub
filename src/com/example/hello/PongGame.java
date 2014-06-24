@@ -44,9 +44,4 @@ public class PongGame extends JFrame {
 		g2.clearRect(0, 0, getWidth(), getHeight());
 		ball.draw(g2);
 	}
-
-	@Override
-	public void paintComponents(Graphics g) {
-
-	}
 }
